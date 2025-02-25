@@ -45,46 +45,307 @@
   #root, #__next {
     isolation: isolate;
   }
-
+  /* Set the background color of the entire website to grey */
+  body {
+    background-color:#f9faff;
+  }
   .container {
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto 80px;
+    margin: 0px auto 80px;
   }
   .header,
   .hero {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
   }
+  .cpe {
+    font-size: 1.0rem;
+    color: #fdc435;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .fake-image {
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    margin-left: 700px;
+    z-index: -1;
+  }
+
   .desktop-nav {
     display: flex;
+    position: relative;
+    margin-top: 4px;
+    margin-right: 50px;
+    z-index: 1;
+    font-family ;
   }
-    .desktop-nav > p{
-        margin-left: 40px;
-    }
-    .fake-image {
-        width: 400px;
-        height: 400px;
-        background-color: yellow;
-        border-radius: 100%;
-    }
-    h1 {
-        font-size: 2.0rem;
-        margin-bottom: 25px;
-    }
-    .par {
-        text-align: justify;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        margin-top: 10px;
-        background-color: orange;
-        padding: 10px 10px;
-        border-radius: 5px;
-        font-weight: bold;
-        
-    }
+
+  .desktop-nav > p:hover {
+    color: white;
+    cursor: pointer; 
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid red; 
+  }
+
+  .desktop-nav > p {
+    margin-left: 35px;
+  }
+
+  h1 {
+    text-align: justify;
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+  }
+
+  .par {
+    text-align: justify;
+    margin-right: 520px;
+    margin-bottom: 20px;
+  }
+
+  .resume {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    background-color: #fdc435;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .resume:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: orange;
+  }
+
+  .linkedIn {
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .linkedIn:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: #0077b5;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: -20px;
+  }
+  .headerProject, .headerProject2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 2.5rem;
+    z-index: 1;
+    top: -20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .headerProject::after {
+    content: '';
+    position: absolute;
+    bottom: 5px; 
+    margin: auto;
+    width: 7%;
+    height: 4px;
+    background-color: #fdc435;
+    border-radius: 5px;
+  }
+
+  .firstProject, .secondProject, .thirdProject {
+    display: flex;
+    justify-content: space-between;
+    background-color:beige;
+    top: -20px;
+    border: 0.05px;
+    border-radius: 20px;
+    max-width: 988px;
+  }
+
+  .headerNametop, .headerNamebottom{
+    display: flex;  
+    justify-content: center;
+    margin-top: 160px;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .firstparProject, .thirdparProject {
+    text-align: justify;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: 20px;
+  }
+  .viewProject, .viewProject3{
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    margin-left: 75px;
+  }
+  .viewProject:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: pink;
+  }
+
+  .imageProjectOne, .imageProjectThree {
+    max-width: 900px;
+    margin-left: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .imageProjectTwo {
+    max-width: 900px;
+    margin-right: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .headerNamecenter{
+    display: flex;  
+    justify-content: flex-start;
+    margin-top: 160px;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .secondparProject {
+    text-align: justify;
+    margin: 0px 80px 20px 0px;
+    width: 100%;
+  }
+  .viewProject2{
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    margin-right: 75px;
+  }
+  .viewProject2:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: pink;
+  }
+  .viewProject3:hover {
+    color: white;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: pink;
+  }
+  .headerProject2::after {
+    content: '';
+    position: absolute;
+    bottom: 5px; 
+    margin: auto;
+    width: 7%;
+    height: 4px;
+    background-color: #fdc435;
+    border-radius: 5px;
+  }
+  .headerProject2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  
+  .name, .email, .message {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin: 0px auto 0px auto;
+    width: 300px;
+  }
+  .inputName, .inputEmail {
+    display: flex;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 1);
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    border: 0.5px;
+    width: 300px;
+    height: 35px;
+  }
+  .inputMessage {
+    display: flex;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 1);
+    margin: 10px auto 10px auto;
+    border-radius: 5px;
+    border: 0.5px;
+    width: 300px;
+    height: 150px;
+    text-align: start;
+    line-height: 1;
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fdc435;
+    color: black;
+    font-weight: bold;
+    margin: 10px auto;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+.submit:hover {
+  color: white;
+  cursor: pointer;
+  transform: translateY(-5px);
+  background-color: orange;
+}
+.icons {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 100px;
+}
+.vector {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+
+  margin: auto;
+  width: 1300px;
+}
